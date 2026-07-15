@@ -1,0 +1,3 @@
+first i intialized the node application "npm init -y" 
+then installed express "npm install express"
+then gave this prompt "create a server that listens on port 8000 uses json middleware and create a root get route that returns a short message and logs url whenever the server starts"
