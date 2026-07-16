@@ -1,3 +1,12 @@
 first i intialized the node application "npm init -y" 
 then installed express "npm install express"
 then gave this prompt "create a server that listens on port 8000 uses json middleware and create a root get route that returns a short message and logs url whenever the server starts"
+
+now we will create the database schema for the sports app using postgre sql 
+first we will setup the postgree using neon and drizzle 
+go on neon postgree website and search for drizzle , there u will see the connect from drizzle to neon through pre built prompt , copy that prompt and paste that in copilot and it will do the rest additions in the codebase 
+then u have to create account on neon and create new project for feeding the connection string in .env file 
+
+now its time to create schema for the db , deciding what to store and how to store , in real time applications db design first u have to decide what stays still and what moves fast like match - static/anchor but commentary is dynamic
+for the schema design get the prompt from video kit of the js mastery video 
+now we will have to push this progress on github , first we will create new branch "feat/database-schema" and will push the code then we have to create pull request but to review it u can use "code rabbit " to review the changes for u 
