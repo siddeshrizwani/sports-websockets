@@ -6,7 +6,6 @@ import {
     integer,
     timestamp,
     jsonb,
-    array,
 } from 'drizzle-orm/pg-core';
 
 // -------------------------------------------------------------------
@@ -56,6 +55,6 @@ export const commentary = pgTable('commentary', {
     team:      text('team'),                // team the actor belongs to
     message:   text('message'),             // human-readable commentary text
     metadata:  jsonb('metadata'),           // flexible extra data (formations, coords, etc.)
-    tags:      text('tags').array(),        // searchable labels e.g. ['goal', 'header']
+    tags:      text('tags').array(),         // searchable labels e.g. ['goal', 'header']
     createdAt: timestamp('created_at').notNull().defaultNow(),
 });
