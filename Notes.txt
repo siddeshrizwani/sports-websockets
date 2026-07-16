@@ -10,3 +10,14 @@ then u have to create account on neon and create new project for feeding the con
 now its time to create schema for the db , deciding what to store and how to store , in real time applications db design first u have to decide what stays still and what moves fast like match - static/anchor but commentary is dynamic
 for the schema design get the prompt from video kit of the js mastery video 
 now we will have to push this progress on github , first we will create new branch "feat/database-schema" and will push the code then we have to create pull request but to review it u can use "code rabbit " to review the changes for u 
+
+now we have the database setup , now we have to access this data for this we will create rest api endpoints , in real production systems websockets dont replace rest apis instead they complement it , rest is for  commands and inital state and websockets is for live updates 
+
+rest - creates the match , fetches the list of matches , load the app for the first time 
+websockets- match created , score updated , commentary added , live events pushed instantly 
+
+so we will create routes folder inside src folder , in routes create matches.js in that we will create the match related routes
+
+now we will install "zod" for request body params validation , it is used for runtime validation checks "npm install zod" 
+in simple words zod will act as a middlelayer between the raw inputs and your application logic "eg: The score which we pass is actually a number rather than a string "
+so to apply this validation patterns we will use ai as they are standard validations and are repetetive for various columns in the database
