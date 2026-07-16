@@ -56,14 +56,12 @@ export const createMatchSchema = z
             .refine(isIsoDate, { message: 'endTime must be a valid ISO date string' }),
 
         homeScore: z
-            .coerce
             .number()
             .int()
             .nonnegative()
             .optional(),
 
         awayScore: z
-            .coerce
             .number()
             .int()
             .nonnegative()
@@ -84,13 +82,11 @@ export const createMatchSchema = z
 
 export const updateScoreSchema = z.object({
     homeScore: z
-        .coerce
         .number()
         .int()
         .nonnegative(),
 
     awayScore: z
-        .coerce
         .number()
         .int()
         .nonnegative(),
