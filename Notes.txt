@@ -9,3 +9,4 @@ then u have to create account on neon and create new project for feeding the con
 
 now its time to create schema for the db , deciding what to store and how to store , in real time applications db design first u have to decide what stays still and what moves fast like match - static/anchor but commentary is dynamic
 for the schema design get the prompt from video kit of the js mastery video 
+now we will have to push this progress on github , first we will create new branch "feat/database-schema" and will push the code then we have to create pull request but to review it u can use "code rabbit " to review the changes for u 
