@@ -130,4 +130,4 @@ source/
 
 ## Notes
 
-This is the backend only — no frontend included here. Load-tested with ~1000 seeded commentary events across multiple matches to make sure the subscription filtering actually holds up and doesn't leak data between matches...
+This is the backend only — no frontend included here. Load-tested with ~1000 seeded commentary events across multiple matches to make sure the subscription filtering actually holds up and doesn't leak data between matches.
